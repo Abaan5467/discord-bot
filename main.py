@@ -45,7 +45,7 @@ defIntents = discord.Intents.default()
 defIntents.members = True
 defIntents.message_content = True
 
-bot = commands.Bot(command_prefix='.',intents=defIntents)
+bot = commands.Bot(command_prefix='.',intents=defIntents)      #change this to the command prefix you want
 
 
 
@@ -65,7 +65,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
     try:
-        with open("discord-bot\\text files\\logs.txt", "a") as myfile:
+        with open("discord-bot\\text files\\logs.txt", "a") as myfile:  
             myfile.write(f'{message.author} : {message.content}\t at {date.today()}  {string_time} in server: {message.guild}\n')
     except UnicodeEncodeError:
         pass

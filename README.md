@@ -20,4 +20,13 @@ Then run this command:
 ```sh
 pip install python-dotenv
 ```
+You also need to install ffmpeg for the music feature to work. Download ffmpeg from <a herf='https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-2024-07-10-git-1a86a7a48d-full_build.7z'> here
 
+
+
+Then go to the .env file and change the following variables: <br>
+```env
+TOKEN = ''
+FFMPEG_PATH = ''
+MEMES_FOLDER = ''
+```
