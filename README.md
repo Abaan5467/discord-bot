@@ -20,7 +20,7 @@ Then run this command:
 ```sh
 pip install python-dotenv
 ```
-You also need to install ffmpeg for the music feature to work. [Contribution guidelines for this project](https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-2024-07-10-git-1a86a7a48d-full_build.7z)
+You also need to install ffmpeg for the music feature to work. Download ffmpeg [here](https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-2024-07-10-git-1a86a7a48d-full_build.7z)
 
 
 
