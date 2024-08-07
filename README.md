@@ -8,7 +8,7 @@
 </ul>
 .... and many other features will be added soon
 
-#How to run
+# How to run
 **First make sure discord and dotenv modules are installed on your pc**
 To do that, first run this command
 
@@ -29,4 +29,11 @@ Then go to the .env file and change the following variables: <br>
 TOKEN = ''
 FFMPEG_PATH = ''
 MEMES_FOLDER = ''
+```
+
+After that run this command and enjoy:
+
+```py
+python "path_to_main.py"
+
 ```
