@@ -9,7 +9,7 @@ import os
 import re
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path='discord-bot\\vars.env')
+load_dotenv()
 
 TOKEN = os.environ['TOKEN']
 
