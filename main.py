@@ -61,12 +61,18 @@ async def on_ready():
           
 @bot.event
 async def on_message(message):
+    message_with_mention = message.content
+
+    if message.mentions:
+        for mention in message.mentions:
+            message_with_mention = message_with_mention.replace(f'<@{mention.id}>', f'@{mention.name}')
 
     if message.author == bot.user:
         return
+
     try:
-        with open("discord-bot\\text files\\logs.txt", "a") as myfile:  
-            myfile.write(f'{message.author} : {message.content}\t at {date.today()}  {string_time} in server: {message.guild}\n')
+        with open("discord-bot\\text files\\logs.txt", "a") as myfile:
+            myfile.write(f'{message.author} : {message_with_mention}\t at {date.today()}  {string_time} in server: {message.guild}\n')
     except UnicodeEncodeError:
         pass
 
